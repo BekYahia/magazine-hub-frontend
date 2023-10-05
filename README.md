@@ -1,5 +1,6 @@
 # Magazine Hub - Frontend
 
+ - [Backend Repo](https://github.com/BekYahia/magazine-hub-backend)
 ## Setup:
 
 1) Install dependencies:
@@ -12,6 +13,10 @@ npm install
 npm run dev
 ```
 
+## TODO:
+- [] commit marked as //TODO:
+- [] improve UX by print the clear response from the server
+- [] add a loading spinner
 ## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -50,7 +50,9 @@ const authSlice = createSlice({
             console.log('check fulfilled')
         },
         [authExtraActions.check_auth.rejected.type]: (state, action: PayloadAction<any>) => {
+            state.isAuthy = false;
             state.loading = false;
+            
             
             console.log(action)
             console.log('check rejected')

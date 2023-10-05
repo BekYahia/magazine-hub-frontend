@@ -93,6 +93,14 @@ export default function PersistentDrawerLeft() {
       text: 'Users',
       path: '/users',
     },
+    {
+      text: 'Magazines',
+      path: '/magazines',
+    },
+    {
+      text: 'Subscriptions',
+      path: '/subscriptions',
+    }
   ];
 
   return (

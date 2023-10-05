@@ -39,7 +39,7 @@ const usersSlice = createSlice({
 function createExtraActions() {
     return {
         getUsers: createAsyncThunk(
-        `auth/getUsers`,
+        `users/getUsers`,
             () =>
             axios.get(`/api/users`)
             .then((res) => {
