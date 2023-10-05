@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import { Provider } from 'react-redux'
 import store from './store'
+import axios from 'axios'
+
+// set auth token header to every request
+axios.interceptors.request.use(config => {
+	config.headers['x-auth-token'] = localStorage.getItem('__MH_TOKEN__')
+	return config
+})
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
